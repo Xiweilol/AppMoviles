@@ -49,3 +49,4 @@ let suma = a+b//7
 let resta = a-b//3
 let multiplicacion = a*b//10
 let division = a/b//2.5
+//git add . git commit -m "18/09/2024 Xiwei"
