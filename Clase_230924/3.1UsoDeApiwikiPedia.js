@@ -1,4 +1,4 @@
-const terminoBusqueda = 'Programación'; // Término que deseas buscar
+const terminoBusqueda = 'MineCraft'; // Término que deseas buscar
 const url = `https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${terminoBusqueda}&format=json&origin=*`; 
 
 // Función para obtener resultados de Wikipedia
