@@ -1,42 +1,53 @@
 <!DOCTYPE html>
+<!--tipo de lenguaje es español-->
 <html lang="en">
+<!--los encabezados aqui puede entrar-->
 <head>
+    <!--meta puede servir para poner una imagen-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Sencilla</title>
+    <!--vincular el hoja de estilo-->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="calculator">
-        <input type="text" id ="display" class ="calculator-screen" value="" disable>
-        <div class = "calculator-buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
 
+<body>
+    <!--definir una caja para el contenedor del calculadorta-->
+    <div class="calculator">
+        <!--crear un campo que permite contener textos ahora esta desabilitado-->
+        <input type="text" id ="display" class ="calculator-screen" value="" disable>
+        <!--crear una caja de botones-->
+        <div class = "calculator-buttons">
+            <!--onclick, al hacer un clic llama una funcion este caso limpiar el campo de texto-->
+            <button class="button" onclick="clearDisplay()">C</button>
+            <!--limpiar digito por digito al campo de texto-->
             <button class="button" onclick="deleteLast()">DEL</button> 
+            <!--pon el funcion que tiene la funcion de añadir el valor indicado al display-->
             <button class="button" onclick="appendToDisplay('/')">/</button>
             <button class="button" onclick="appendToDisplay('*')">*</button>
             <button class="button" onclick="appendToDisplay('7')">7</button>
-            
+            <!--pon el funcion que tiene la funcion de añadir el valor indicado al display-->
             <button class="button" onclick="appendToDisplay('8')">8</button>
             <button class="button" onclick="appendToDisplay('9')">9</button>
             <button class="button" onclick="appendToDisplay('-')">-</button>
             <button class="button" onclick="appendToDisplay('4')">4</button> 
-
+            <!--pon el funcion que tiene la funcion de añadir el valor indicado al display-->
             <button class="button" onclick="appendToDisplay('5')">5</button>
             <button class="button" onclick="appendToDisplay('6')">6</button>
             <button class="button" onclick="appendToDisplay('+')">+</button>
             <button class="button" onclick="appendToDisplay('1')">1</button>
-            
+            <!--pon el funcion que tiene la funcion de añadir el valor indicado al display-->
             <button class="button" onclick="appendToDisplay('2')">2</button>
             <button class="button" onclick="appendToDisplay('3')">3</button> 
             <button class="button equal-button" onclick="calculateResult()">=</button>
-    
+            <!--pon el funcion que tiene la funcion de añadir el valor indicado al display-->
             <button class="button" onclick="appendToDisplay('0')">0</button>
             <button class="button" onclick="appendToDisplay('.')">.</button>
 
             
         </div>
     </div>
+    <!--añadir el javascript al html-->
     <script src="script.js"></script>
 </body>
 </html>
